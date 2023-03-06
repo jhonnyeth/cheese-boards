@@ -1,5 +1,4 @@
-const sequelize = require("./index");
-const Sequelize = require("./index");
+const { Sequelize, sequelize } = require("./index");
 
 const Board = sequelize.define("Board", {
   type: Sequelize.STRING,

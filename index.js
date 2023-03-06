@@ -1,3 +1,4 @@
+const path = require("path");
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize({
@@ -5,4 +6,9 @@ const sequelize = new Sequelize({
   storage: "database.sqlite",
 });
 
-module.exports = sequelize;
+module.exports = {
+  sequelize,
+  Sequelize,
+};
+
+// to prevent confusion, export as sequelize and Sequelize

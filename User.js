@@ -1,7 +1,6 @@
-const sequelize = require("./index");
-const Sequelize = require("./index");
+const { Sequelize, sequelize } = require("./index");
 
-const Board = sequelize.define("Board", {
+const User = sequelize.define("User", {
   name: Sequelize.STRING,
   email: Sequelize.STRING,
 });
